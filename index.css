@@ -1,0 +1,210 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc0d0 ; /* Soft background */
+    color: #333;
+}
+
+header {
+    background-color: #e74c3c; /* Elegant red */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+    letter-spacing: 2px;
+    position: relative;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #e95d4c; /* Lighter red for navigation */
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #e74c3c; /* Matching the header color */
+}
+
+nav a:hover {
+    background-color: #f38474; /* Lighter red on hover */
+}
+
+section {
+    padding: 1em;
+    background-color: #fff; /* White background for content sections */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: relative;
+    display: flex; /* Use flexbox for the Jewelry section */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute items evenly with space around */
+    align-items: center; /* Center items vertically */
+    border-color: blue 21px;
+}
+
+ section img {
+    width:240px;
+    border: 10px solid #e74c3c; /* Border color for sections */
+        border-radius: 10px;
+        padding: 20px;
+ }
+ 
+
+section h2 {
+    width: 100%; /* Make the h2 span the full width */
+    text-align: center;
+}
+
+h2 {
+    color: #e74c3c; /* Matching the header color */
+}
+
+p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+footer {
+    background-color: #e74c3c; /* Matching the header color */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position:fix;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    header {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Animation for a subtle heartbeat effect on the header */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%);
+    animation: heartbeat 2s infinite;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    background-color: #e74c3c; /* Elegant red background */
+    color: #fff; /* White text color */
+    padding: 15px; /* Padding for better visual appeal */
+    font-size: 1.5em; /* Increase font size */
+    margin-bottom: 10px; /* Add some space below the heading */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+h3:hover {
+    background-color: #f38474; /* Lighter red on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+/* Animation for a subtle heartbeat effect on the header */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%);
+    animation: heartbeat 2s infinite;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+    background-color: #e74c3c; /* Elegant red background */
+    color: #fff; /* White text color */
+    padding: 15px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+h3:hover {
+    background-color: #f38474;
+    transform: scale(1.05);
+}
